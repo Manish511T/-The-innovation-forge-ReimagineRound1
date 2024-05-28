@@ -1,3 +1,12 @@
+@font-face {
+    font-family:racing-font ;
+    src: url(./ProRacing-7BZOD.otf);
+}
+@font-face {
+    font-family:super-brigade-font ;
+    src: url(./SuperBrigade-2O8Ao.otf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,4 +16,54 @@
 body {
     height: 100%;
     width: 100%;
+}
+
+/* navbar */
+
+.navbar{
+    background-color:#111111;
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* box 1 */
+.box1{
+    height: 5vh;
+    width: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    /* background-image: url(./images/37860_KTM_LogoPodium_orange_RGB.jpg);
+    height: 4vh;
+    width: 6vw;
+    background-size:cover;
+    background-position: center; */
+    font-family: super-brigade-font;
+    font-size: 2vh;
+    font-weight: 100;
+    color: white;
+
+}
+
+/* box 2 */
+
+.box2{
+    /* background-color: blue; */
+    color: white;
+    height: 5vh;
+    width:35vw ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.innerBox{
+    font-size:55%;
+    font-family:racing-font;
+    font-weight: 100;
 }
