@@ -1,11 +1,3 @@
-@font-face {
-    font-family:racing-font ;
-    src: url(./ProRacing-7BZOD.otf);
-}
-@font-face {
-    font-family:super-brigade-font ;
-    src: url(./SuperBrigade-2O8Ao.otf);
-}
 
 *{
     margin: 0;
@@ -13,18 +5,20 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     height: 100%;
     width: 100%;
+    background-color:#1b1b1b ;
+
 }
 
 /* navbar */
 
 .navbar{
-    background-color:#111111;
+    /* background-color:#121010; */
     height: 5vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -35,6 +29,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 5vw;
 }
 
 .logo{
@@ -43,10 +38,11 @@ body {
     width: 6vw;
     background-size:cover;
     background-position: center; */
-    font-family: super-brigade-font;
+    /* font-family: super-brigade-font; */
     font-size: 2vh;
     font-weight: 100;
     color: white;
+    
 
 }
 
@@ -57,13 +53,44 @@ body {
     color: white;
     height: 5vh;
     width:35vw ;
+    margin-right:20vw;
+    margin-left: 5vw;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .innerBox{
-    font-size:55%;
-    font-family:racing-font;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: xx-small;
     font-weight: 100;
+}
+
+/* box 3 */
+.box3{
+    height: 5vh;
+    width: 20%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.box3 > i{
+    color: #ff891a;
+}
+
+.text{
+    font-size: xx-small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* box 4 */
+
+.box4{
+    height: 5vh;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+
 }
