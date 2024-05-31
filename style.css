@@ -8,8 +8,10 @@
 html, body {
     height: 100%;
     width: 100%;
-    background-color:#1b1b1b ;
+}
 
+body{
+    background-color:#1c1c1c ;
 }
 
 /* navbar */
@@ -61,9 +63,10 @@ html, body {
 }
 
 .innerBox{
-    font-family:Arial, Helvetica, sans-serif ;
-    font-size: xx-small;
-    font-weight: 100;
+    font-family:Arial;
+    font-size:1.5vh;
+    /* border-bottom: 2px solid #FF6600 ; */
+    padding: 2px;
 }
 
 /* box 3 */
@@ -75,22 +78,73 @@ html, body {
     align-items: center;
 }
 .box3 > i{
-    color: #ff891a;
+    color: #FF6600;
 }
 
-.text{
-    font-size: xx-small;
+.box3 .text{
+    font-size:1.5vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* box 4 */
 
-.box4{
+/* .box4{
     height: 5vh;
-    width: 10%;
+    width: 10vw;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     color: white;
 
+} */
+
+.box4{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 2.5vw;
+}
+
+.box4 .search{
+    /* background-color: salmon; */
+    height: 4.5vh;
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5vh;
+}
+.box4 .menu{
+    /* background-color: salmon; */
+    height: 4.5vh;
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5vh;
+}
+
+
+/* navbar hover effect */
+
+.innerBox:hover{
+    border-bottom: 2px solid #FF6600 ;
+    
+}
+
+.box3 .text:hover{
+    border-bottom: 2px solid #FF6600 ;
+
+}
+
+.box4 .search:hover{
+     background-color: #343434;
+     border: 2px;
+     border-radius: 50%;
+}
+.box4 .menu:hover{
+     background-color: #343434;
+     border: 2px;
+     border-radius: 50%;
 }
