@@ -1,0 +1,118 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: darknet;
+    src: url(./fonts/DarknetItalic-rgn8B.ttf);
+}
+@font-face {
+    font-family: racing;
+    src: url(./fonts/ProRacing-7BZOD.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+.navbarContainer{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5vh 4vw;
+    border-bottom: 1px solid rgb(22, 22, 22);
+}
+
+.logo{
+    font-family: racing;
+    font-size: 3.8vh;
+    width: 10%;
+    font-weight: 800;
+
+}
+
+
+
+.searchBar{
+    width: 20%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    
+}
+
+.searchBar input{
+    border: none;
+    height: 3.4vh;
+    border-radius: 10px;
+    /* background-color: #242424; */
+    background-color: transparent;
+    border-bottom: 0.2px solid rgb(72, 72, 72);
+    border-radius: 3px;
+    color: rgb(187, 187, 187);
+    
+}
+
+.searchBar i{
+  color: #FF6600;
+}
+
+.box{
+    /* background-color:red; */
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8vh;
+    padding-left: 5vw;
+    font-weight: 500;
+}
+
+
+
+/* hero section */
+
+
+.hero{
+    /* background-color: rgb(255, 0, 0); */
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.hero .hero-text{
+    font-family: racing;
+    font-size: 12vw;
+    color: #FF6600;
+    overflow: hidden;
+}
+
+.hero .hero-text span{
+    font-family: racing;
+    display: inline-block;
+}
+
+.hero .hero-des{
+    font-family: racing;
+    font-size: 4vw;
+}
