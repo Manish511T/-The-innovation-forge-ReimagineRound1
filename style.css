@@ -11,6 +11,7 @@
     src: url(./fonts/ProRacing-7BZOD.otf);
 }
 
+
 *{
     padding: 0;
     margin: 0;
@@ -26,6 +27,7 @@ html body{
 body{
     background-color: #0f0f0f;
     color: #fff;
+    font-family: gilroy;
 }
 
 .navbarContainer{
@@ -91,7 +93,7 @@ body{
 
 .hero{
     /* background-color: rgb(255, 0, 0); */
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -116,3 +118,67 @@ body{
     font-family: racing;
     font-size: 4vw;
 }
+
+
+.page1 {
+    background: radial-gradient(farthest-corner at 50% 50%, #333, #222, #111);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.page1 .bgtext{
+    position: absolute;
+    font-family: darknet;
+    z-index: 0;
+    font-size: 20vw;
+    font-style: italic;
+    top: 9vh;
+    opacity: 10%;
+}
+
+.page1 img{
+    height: 30vw;
+    z-index: 1;
+}
+
+.page1 .title{
+    font-family: racing;
+    font-size: 5vw;
+    opacity: 80%;
+}
+
+.details{
+    /* background-color: aqua; */
+    height: 5vh;
+    width: 100%;
+    padding: 0.5vh 4vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    
+}
+
+.details .dets{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details .dets h1{
+    font-size: 2.3vh;
+    color: #cecece;
+}
+.details .dets h3{
+    font-size: 1.8vh;
+    color: #8e8e8e;
+}
+
+
