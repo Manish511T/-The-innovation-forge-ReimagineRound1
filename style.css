@@ -11,6 +11,14 @@
     src: url(./fonts/ProRacing-7BZOD.otf);
 }
 
+@font-face {
+    font-family: blenderPro;
+    src: url(./fonts/BlenderPro-Bold.woff);
+}
+@font-face {
+    font-family: blenderPro_light;
+    src: url(./fonts/BlenderPro-Medium.woff);
+}
 
 *{
     padding: 0;
@@ -45,7 +53,7 @@ body{
     font-size: 3.8vh;
     width: 10%;
     font-weight: 800;
-
+    cursor: pointer;
 }
 
 
@@ -86,6 +94,11 @@ body{
     font-weight: 500;
 }
 
+.box .item:hover{
+    border-bottom: 1px solid #FF6600;
+    cursor: pointer;
+}
+
 
 
 /* hero section */
@@ -120,6 +133,7 @@ body{
 }
 
 
+
 .page1 {
     background: radial-gradient(farthest-corner at 50% 50%, #333, #222, #111);
     height: 100vh;
@@ -136,7 +150,7 @@ body{
     position: absolute;
     font-family: darknet;
     z-index: 0;
-    font-size: 20vw;
+    font-size: 20vh;
     font-style: italic;
     top: 9vh;
     opacity: 10%;
@@ -182,3 +196,86 @@ body{
 }
 
 
+/* banner */
+
+.banner{
+    height: 35vh;
+    width: 100%;
+    background: radial-gradient(farthest-corner at 50% 50%, #545454, #222, #000000);
+    border: 2px solid #898989;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .bike-L{
+    height: 30vh;
+    width: 25vw;
+}
+.banner .bike-L{
+    height: 30vh;
+    width: 25vw;
+}
+.banner .bike-R{
+    height: 30vh;
+    width: 25vw;
+}
+.banner .bike-R{
+    height: 30vh;
+    width: 25vw;
+}
+
+
+
+.banner #l1{
+    z-index: 2;
+}
+.banner #l2{
+    z-index: 1;
+}
+
+.banner #r1{
+    z-index: 1;
+}
+.banner #r2{
+    z-index:2;
+}
+
+
+.bnr_text{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px;
+    overflow: hidden;
+}
+
+.bnr_text h1{
+    font-size: 6.4vw;
+    font-weight: 600;
+    font-family:blenderPro;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 5vw;
+
+}
+.bnr_text h3{
+    font-size: 2.8vw;
+    font-weight: 200;
+    font-family:blenderPro_light;
+}
+
+
+/* temp */
+
+.temp{
+    height: 100vh;
+}

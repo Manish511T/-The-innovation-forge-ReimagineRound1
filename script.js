@@ -42,7 +42,7 @@ navbar();
 // hero section
 function hero() {
 
-    
+
 
     function breakTheText() {
 
@@ -124,66 +124,170 @@ hero();
 
 
 
-function page1(){
-    gsap.from(".page1 img",{
-        x:1000,
-        y:300,
-        scale:0,
-        duration:1,
-        opacity:0,
-        scrollTrigger:{
-            trigger:".page1",
-            scroller:"body",
-            markers:false,
-            start:"top 30%",
-            end:"top 100%",
-            scrub:5,
-            pin:true
+function page1() {
+    gsap.from(".page1 img", {
+        x: 1000,
+        y: 300,
+        scale: 0,
+        duration: 1,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: ".page1",
+            scroller: "body",
+            markers: false,
+            start: "top 30%",
+            end: "top 100%",
+            scrub: 5,
+            pin: true
 
         }
 
     })
 
-    gsap.from(".title",{
-        x:-100,
-        scale:0,
-        opacity:0,
-        scrollTrigger:{
-            trigger:".page1",
-            scroller:"body",
-            markers:false,
-            start:"top 20%",
-            end:"top 80%",
-            scrub:4,
-            pin:true
+    gsap.from(".title", {
+        x: -100,
+        scale: 0,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: ".page1",
+            scroller: "body",
+            markers: false,
+            start: "top 20%",
+            end: "top 80%",
+            scrub: 4,
+            pin: true
 
         }
     })
 
 
 
-    var tl=gsap.timeline();
-    tl.from(".dets",{
-        opacity:0,
-        y:-30,
-        stagger:2,
-        duration:4,
-        scrollTrigger:{
-            trigger:".page1",
-            scroller:"body",
-            markers:false,
-            start:"top 20%",
-            end:"top 80%",
-            scrub:4,
-            pin:true
+    var tl = gsap.timeline();
+    tl.from(".dets", {
+        opacity: 0,
+        y: -30,
+        stagger: 2,
+        duration: 4,
+        scrollTrigger: {
+            trigger: ".page1",
+            scroller: "body",
+            markers: false,
+            start: "top 20%",
+            end: "top 80%",
+            scrub: 3,
+            pin: true
 
         }
     })
-
- 
-
-
-
 }
 
 page1()
+
+
+
+
+// banner
+
+function banner(){
+    
+
+
+
+
+    gsap.from("#l2",{
+        opacity: 0,
+        x: -200,
+        z:-50,
+        scale:0,
+        duration: 1,
+        scrollTrigger:{
+            trigger: ".banner",
+            scroller: "body",
+            markers: false,
+            start: "top 80%",
+            end:"top 40%",
+            scrub: 2,
+        }
+    })
+    gsap.from("#l1",{
+        opacity: 0,
+        x: -200,
+        z:-50,
+        scale:0,
+        duration: 1,
+        delay:0.9,
+        scrollTrigger:{
+            trigger: ".banner",
+            scroller: "body",
+            markers: false,
+            start: "top 60%",
+            end:"top 40%",
+            scrub:2
+        }
+        
+    })
+    gsap.from("#r1",{
+        opacity: 0,
+        x: 200,
+        z:-50,
+        scale:0,
+        duration: 1,
+        scrollTrigger:{
+            trigger: ".banner",
+            scroller: "body",
+            markers: false,
+            start: "top 80%",
+            end:"top 40%",
+            scrub: 2,
+        }
+        
+    })
+    gsap.from("#r2",{
+        opacity: 0,
+        x: 200,
+        z:-50,
+        scale:0,
+        duration: 1,
+        delay:0.9,
+        scrollTrigger:{
+            trigger: ".banner",
+            scroller: "body",
+            markers: false,
+            start: "top 60%",
+            end:"top 40%",
+            scrub:2
+        }
+        
+    })
+
+
+    gsap.from(".bnr_text h1",{
+        opacity: 0,
+        y:150,
+        duration: 1,
+        scrollTrigger:{
+            trigger: ".banner",
+            scroller: "body",
+            markers: false,
+            start: "top 30%",
+            end:"top 18%",
+            scrub:2
+        }
+    })
+    gsap.from(".bnr_text h3",{
+        opacity: 0,
+        y:-150,
+        duration: 1,
+        scrollTrigger:{
+            trigger: ".banner",
+            scroller: "body",
+            markers: false,
+            start: "top 30%",
+            end:"top 18%",
+            scrub:2
+        }
+    })
+
+}
+
+banner()
