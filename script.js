@@ -1,4 +1,5 @@
 
+
 // navbar
 
 function navbar() {
@@ -188,106 +189,170 @@ page1()
 
 // banner
 
-function banner(){
-    
+function banner() {
 
 
 
 
-    gsap.from("#l2",{
+
+    gsap.from("#l2", {
         opacity: 0,
         x: -200,
-        z:-50,
-        scale:0,
+        z: -50,
+        scale: 0,
         duration: 1,
-        scrollTrigger:{
+        scrollTrigger: {
             trigger: ".banner",
             scroller: "body",
             markers: false,
             start: "top 80%",
-            end:"top 40%",
+            end: "top 40%",
             scrub: 2,
         }
     })
-    gsap.from("#l1",{
+    gsap.from("#l1", {
         opacity: 0,
         x: -200,
-        z:-50,
-        scale:0,
+        z: -50,
+        scale: 0,
         duration: 1,
-        delay:0.9,
-        scrollTrigger:{
+        delay: 0.9,
+        scrollTrigger: {
             trigger: ".banner",
             scroller: "body",
             markers: false,
             start: "top 60%",
-            end:"top 40%",
-            scrub:2
+            end: "top 40%",
+            scrub: 2
         }
-        
+
     })
-    gsap.from("#r1",{
+    gsap.from("#r1", {
         opacity: 0,
         x: 200,
-        z:-50,
-        scale:0,
+        z: -50,
+        scale: 0,
         duration: 1,
-        scrollTrigger:{
+        scrollTrigger: {
             trigger: ".banner",
             scroller: "body",
             markers: false,
             start: "top 80%",
-            end:"top 40%",
+            end: "top 40%",
             scrub: 2,
         }
-        
+
     })
-    gsap.from("#r2",{
+    gsap.from("#r2", {
         opacity: 0,
         x: 200,
-        z:-50,
-        scale:0,
+        z: -50,
+        scale: 0,
         duration: 1,
-        delay:0.9,
-        scrollTrigger:{
+        delay: 0.9,
+        scrollTrigger: {
             trigger: ".banner",
             scroller: "body",
             markers: false,
             start: "top 60%",
-            end:"top 40%",
-            scrub:2
+            end: "top 40%",
+            scrub: 2
         }
-        
+
     })
 
 
-    gsap.from(".bnr_text h1",{
+    gsap.from(".bnr_text h1", {
         opacity: 0,
-        y:150,
+        y: 150,
         duration: 1,
-        scrollTrigger:{
+        scrollTrigger: {
             trigger: ".banner",
             scroller: "body",
             markers: false,
             start: "top 30%",
-            end:"top 18%",
-            scrub:2
+            end: "top 18%",
+            scrub: 2
         }
     })
-    gsap.from(".bnr_text h3",{
+    gsap.from(".bnr_text h3", {
         opacity: 0,
-        y:-150,
+        y: -150,
         duration: 1,
-        scrollTrigger:{
+        scrollTrigger: {
             trigger: ".banner",
             scroller: "body",
             markers: false,
             start: "top 30%",
-            end:"top 18%",
-            scrub:2
+            end: "top 18%",
+            scrub: 2
         }
     })
 
 }
 
 banner()
+
+
+
+function map(){
+    gsap.from(".map .text .ktm h1",{
+        y:200,
+        opacity:0,
+        duration:0.8,
+        scrollTrigger:{
+            trigger:".map",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+    })
+    gsap.from(".map .text .worldwide h2",{
+        x:-400,
+        opacity:0,
+        duration:0.8,
+        scrollTrigger:{
+            trigger:".map",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+    })
+    gsap.from(".map .text .dots",{
+        x:200,
+        opacity:0,
+        duration:0.8,
+        scrollTrigger:{
+            trigger:".map",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+    })
+    gsap.from(".map img",{
+        x:500,
+        opacity:0,
+        duration:0.8,
+        scrollTrigger:{
+            trigger:".map",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+    })
+
+
+
+
+
+}
+
+map()
