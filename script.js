@@ -562,10 +562,22 @@ function achievement(){
         
     })
 
+    gsap.from(".achivements .text-box h1",{
+        scale:0,
+        duration:2,
+        opacity:0,
+        scrollTrigger:{
+            trigger:".achivements",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+    })
+
 
 }
 
 achievement()
-
-
 
