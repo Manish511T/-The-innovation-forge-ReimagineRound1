@@ -581,3 +581,68 @@ function achievement(){
 
 achievement()
 
+
+// advertisement
+
+function ads(){
+    gsap.from(".advertisement .section2  .heading",{
+        x: 100,
+        opacity:0,
+        duration:1,
+        scrollTrigger:{
+            trigger:".advertisement .section2  .heading",
+            scroller:"body",
+            markers:false,
+            start:"top 60%",
+            end:"top 50%",
+            scrub:2
+        }
+    })
+    gsap.from(".advertisement .section2  p",{
+        x: -200,
+        opacity:0,
+        duration:1,
+        scrollTrigger:{
+            trigger:".advertisement .section2  .heading",
+            scroller:"body",
+            markers:false,
+            start:"top 54%",
+            end:"top 46%",
+            scrub:2
+        }
+    })
+    gsap.from(".advertisement .section2  .bottom",{
+        y:200,
+        opacity:0,
+        duration:1,
+        scrollTrigger:{
+            trigger:".advertisement .section2  .heading",
+            scroller:"body",
+            markers:false,
+            start:"top 50%",
+            end:"top 40%",
+            scrub:2
+        }
+    })
+}
+
+ads()
+
+function footerLogo(){
+    gsap.from(".footer .logo img",{
+        y:200,
+        opacity:1,
+        duration:1,
+        scrollTrigger:{
+            trigger:".footer",
+            scroller:"body",
+            markers:false,
+            start:"top 40%",
+            end:"top 30%",
+            scrub:2
+
+        }
+    })
+}
+
+footerLogo()
