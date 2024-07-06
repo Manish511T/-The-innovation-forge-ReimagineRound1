@@ -336,7 +336,7 @@ function map(){
         }
     })
     gsap.from(".map img",{
-        x:500,
+        y:-200,
         opacity:0,
         duration:0.8,
         scrollTrigger:{
@@ -349,10 +349,223 @@ function map(){
         }
     })
 
+}
+
+map()
 
 
+
+
+// achievement
+function counter(){
+    const createOdometer = (el, value) => {
+        const odometer = new Odometer({
+            el:el,
+            value:0,
+        });
+
+        let hasRun =false;
+
+        const options = {
+            threshold:[0,0.9],
+        };
+
+        const callback = (entries,observer) =>{
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    if(!hasRun){
+                        odometer.update(value);
+                        hasRun = true;
+                    }
+
+                }
+            })
+        }
+
+        const observer = new IntersectionObserver(callback,options);
+        observer.observe(el)
+
+
+    }
+    
+    const titleOdometer = document.querySelector("#title-value");
+    
+    createOdometer(titleOdometer,320);
+    
+    const victoriesOdometer = document.querySelector("#victories-value");
+    
+    createOdometer(victoriesOdometer,60);
+    
+    
+    const rallyOdometer = document.querySelector("#rally-value");
+    
+    createOdometer(rallyOdometer,18);
+    
+}
+
+counter()
+
+function achievement(){
+    gsap.from(".achivements .text-box .a",{
+        x:-200,
+        duration:1,
+        opacity:0,
+        scrollTrigger:{
+            trigger:".achivements",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1,
+        }
+        
+    })
+    gsap.from(".achivements .text-box .b",{
+        x:200,
+        duration:1,
+        opacity:0,
+        scrollTrigger:{
+            trigger:".achivements",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+        
+    })
+    gsap.from(".achivements .text-box .c",{
+        x:-200,
+        duration:1,
+        opacity:0,
+        scrollTrigger:{
+            trigger:".achivements",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+        
+    })
+    gsap.from(".achivements .text-box .d",{
+        x:200,
+        duration:1,
+        opacity:0,
+        scrollTrigger:{
+            trigger:".achivements",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+        
+        
+    })
+    gsap.from(".achivements .text-box .e",{
+        x:-200,
+        duration:1,
+        opacity:0,
+        scrollTrigger:{
+            trigger:".achivements",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+        
+    })
+    gsap.from(".achivements .text-box .f",{
+        x:200,
+        duration:1,
+        opacity:0,
+        scrollTrigger:{
+            trigger:".achivements",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+        
+    })
+    gsap.from(".achivements .text-box .g",{
+        x:-200,
+        duration:1,
+        opacity:0,
+        scrollTrigger:{
+            trigger:".achivements",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+        
+    })
+    gsap.from(".achivements .text-box .h",{
+        x:200,
+        duration:1,
+        opacity:0,
+        scrollTrigger:{
+            trigger:".achivements",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+        
+    })
+    gsap.from(".achivements .text-box .i",{
+        x:-200,
+        duration:1,
+        opacity:0,
+        scrollTrigger:{
+            trigger:".achivements",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+        
+    })
+    gsap.from(".achivements .text-box .j",{
+        x:200,
+        duration:1,
+        opacity:0,
+        scrollTrigger:{
+            trigger:".achivements",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+        
+    })
+    gsap.from(".achivements .text-box .k",{
+        x:-200,
+        duration:1,
+        opacity:0,
+        scrollTrigger:{
+            trigger:".achivements",
+            scroller:"body",
+            markers:false,
+            start:"top 45%",
+            end:"top 10%",
+            scrub:1
+        }
+        
+    })
 
 
 }
 
-map()
+achievement()
+
+
+

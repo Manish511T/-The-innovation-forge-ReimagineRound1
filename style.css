@@ -359,6 +359,84 @@ body::-webkit-scrollbar{
 
 
 
+.achivements{
+    height: 80vh;
+    width: 100vw;
+    /* background-color: #898989; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5vw 5vw;
+
+}
+
+.achivements .text-box{
+    height: 100%;
+    width: 40vw;
+    background-color: #FF6600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.achivements .text-box span{
+    font-size: 6vw;
+    line-height: 5vw;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-family: blenderPro_light;
+}
+
+
+
+
+.achivements .box-container{
+    /* background-color: salmon; */
+    height:40vh ;
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+}
+
+.achivements .box-container .boxes{
+    /* background-color: #aaaaaa; */
+    height: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 5px;
+}
+
+
+.box-container .boxes .numbers{
+    /* background-color: #222; */
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vw;
+}
+.box-container .boxes .name{
+    /* background-color: #676767; */
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:blenderPro_light ;
+}
+
+.box-container .boxes #manufacturer-value{
+    color: #FF6600;
+    font-size: 10vw;
+}
+
 
 /* temp */
 .temp{
