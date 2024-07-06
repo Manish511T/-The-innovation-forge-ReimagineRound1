@@ -450,8 +450,216 @@ body::-webkit-scrollbar{
 }
 
 
-/* temp */
-.temp{
-    height: 100vh;
+/* e */
+
+.advertisement{
+    /* background-color: #898989; */
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advertisement .section1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #222; */
+
+    
+}
+
+.section1 img{
+    height: 100%;
     width: 100%;
+    position: relative;
+    opacity: 50%;
+    
+}
+
+.advertisement .section1 button{
+    position: absolute;
+    left: 15%;
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #FF6600;
+    border-radius: 10vh;
+    font-family: blenderPro;
+    cursor: pointer;
+
+}
+
+.advertisement .section1 button i{
+    font-size: 2vw;
+}
+
+.advertisement .section1 button:hover{
+    background-color: #FF6600;
+}
+
+
+
+.advertisement .section2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.advertisement .section2 .title{
+    height: 50%;
+    width: 100%;
+    /* background-color: #333; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 5vw;
+
+}
+
+.advertisement .section2 .title h1{
+    font-size: 5vw;
+    text-align: center;
+    border-bottom: 2px solid #FF6600 ;
+    padding: 20px 20px;
+}
+
+.advertisement .section2 .title p{
+    text-align: center;
+}
+
+.advertisement .section2 .bottom button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.advertisement .section2 .bottom button i{
+    font-size: 1.5vw;
+    color: #FF6600;
+}
+
+.advertisement .section2 .bottom button:hover{
+    scale: 1.2;
+    background-color: #1a1a1a;
+}
+
+
+/* footer */
+
+.footer{
+    height: 80vh;
+    width: 100vw;
+    background-color: #1c1c1c;
+    padding: 2vw 3vw;
+}
+
+.footer .box1{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #343434; */
+}
+
+.footer .box1 .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: #1a1a1a; */
+    height:100% ;
+    padding: 2vw 0;
+}
+
+.footer .box1 .column .heading{
+    font-family: blenderPro;
+}
+.footer .heading:hover{
+    color: #FF6600;
+}
+.footer .box1 .column .options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: #8e8e8e; */
+    height: 100%;
+    margin-top: 2vw;
+    font-size: 15px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #8b8b8b;
+}
+
+.footer a:hover{
+    border-bottom: 1px solid #FF6600;
+}
+
+.footer .social-media{
+    /* background-color: #000000; */
+    height: 80%;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .social-media .heading{
+    font-family: blenderPro;
+    font-size: 3.5vw;
+    color: #FF6600;
+
+}
+
+.footer .social-media .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+    font-size: 2vw;
+    color: white;
+}
+
+.footer .social-media .logo {
+    height:30vh ;
+    width: 100%;
+    overflow: hidden;
+}
+.footer .social-media img{
+    height: 24vh;
+    width: 15vw;
+}
+
+.footer .section2{
+    padding: 1vw 0;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footer .section2 h2{
+    font-family:blenderPro;
+    color: #FF6600;
+    cursor: pointer;
+}
+
+.footer .section2 h2:hover{
+    scale:1.2;
 }
