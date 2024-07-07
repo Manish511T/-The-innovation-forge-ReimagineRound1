@@ -2,10 +2,12 @@
     font-family: gilroy;
     src: url(./fonts/Gilroy-Regular.ttf);
 }
+
 @font-face {
     font-family: darknet;
     src: url(./fonts/DarknetItalic-rgn8B.ttf);
 }
+
 @font-face {
     font-family: racing;
     src: url(./fonts/ProRacing-7BZOD.otf);
@@ -15,36 +17,37 @@
     font-family: blenderPro;
     src: url(./fonts/BlenderPro-Bold.woff);
 }
+
 @font-face {
     font-family: blenderPro_light;
     src: url(./fonts/BlenderPro-Medium.woff);
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: gilroy;
 }
 
-html body{
+html body {
     height: 100%;
     width: 100%;
 }
 
-body{
+body {
     background-color: #0f0f0f;
     color: #fff;
     font-family: gilroy;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
 
 
-.navbarContainer{
+.navbarContainer {
     height: 10vh;
     width: 100%;
     display: flex;
@@ -54,26 +57,26 @@ body::-webkit-scrollbar{
     border-bottom: 1px solid rgb(22, 22, 22);
 }
 
-.logo{
+.logo {
     font-family: racing;
     font-size: 3.8vh;
-    width: 10%;
+    width: 20%;
     font-weight: 800;
     cursor: pointer;
 }
 
 
 
-.searchBar{
+.searchBar {
     width: 20%;
     /* background-color: aqua; */
     display: flex;
     align-items: center;
     gap: 2px;
-    
+
 }
 
-.searchBar input{
+.searchBar input {
     border: none;
     height: 3.4vh;
     border-radius: 10px;
@@ -82,24 +85,24 @@ body::-webkit-scrollbar{
     border-bottom: 0.2px solid rgb(72, 72, 72);
     border-radius: 3px;
     color: rgb(187, 187, 187);
-    
+
 }
 
-.searchBar input:hover{
+.searchBar input:hover {
     border-color: #FF6600;
 }
 
-.searchBar i{
-  color: #FF6600;
-  cursor: pointer;
-  font-size: 1.5vw;
+.searchBar i {
+    color: #FF6600;
+    cursor: pointer;
+    font-size: 1.5vw;
 }
 
-.searchBar i:hover{
+.searchBar i:hover {
     color: white;
 }
 
-.box{
+.box {
     /* background-color:red; */
     width: 60%;
     display: flex;
@@ -110,17 +113,21 @@ body::-webkit-scrollbar{
     font-weight: 500;
 }
 
-.box .item:hover{
+.box .item:hover {
     border-bottom: 1.8px solid #FF6600;
     cursor: pointer;
 }
 
+.menu {
+    display: none;
+
+}
 
 
 /* hero section */
 
 
-.hero{
+.hero {
     /* background-color: rgb(255, 0, 0); */
     height: 100vh;
     width: 100%;
@@ -131,19 +138,19 @@ body::-webkit-scrollbar{
     gap: 3vh;
 }
 
-.hero .hero-text{
+.hero .hero-text {
     font-family: racing;
     font-size: 12vw;
     color: #FF6600;
     overflow: hidden;
 }
 
-.hero .hero-text span{
+.hero .hero-text span {
     font-family: racing;
     display: inline-block;
 }
 
-.hero .hero-des{
+.hero .hero-des {
     font-family: racing;
     font-size: 4vw;
 }
@@ -160,41 +167,44 @@ body::-webkit-scrollbar{
     flex-direction: column;
     gap: 20px;
     position: relative;
+    /* background: #000; */
+    overflow: hidden;
 }
 
-.page1 .bgtext{
+.page1 .bgtext {
     position: absolute;
     font-family: darknet;
     z-index: 0;
-    font-size: 20vh;
+    font-size: 20vw;
     font-style: italic;
     top: 9vh;
     opacity: 10%;
 }
 
-.page1 img{
+.page1 img {
     height: 30vw;
     z-index: 1;
 }
 
-.page1 .title{
+.page1 .title {
     font-family: racing;
     font-size: 5vw;
     opacity: 80%;
 }
 
-.details{
+.details {
     /* background-color: aqua; */
     height: 5vh;
     width: 100%;
-    padding: 0.5vh 4vw;
+    padding: 0.5v 4vw;
     display: flex;
     justify-content: space-evenly;
     margin-top: 2vh;
-    
+
+
 }
 
-.details .dets{
+.details .dets {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -202,11 +212,12 @@ body::-webkit-scrollbar{
     gap: 10px;
 }
 
-.details .dets h1{
-    font-size: 2.3vh;
+.details .dets h1 {
+    font-size: 1.6vw;
     color: #cecece;
 }
-.details .dets h3{
+
+.details .dets h3 {
     font-size: 1.8vh;
     color: #8e8e8e;
 }
@@ -214,7 +225,7 @@ body::-webkit-scrollbar{
 
 /* banner */
 
-.banner{
+.banner {
     height: 35vh;
     width: 100%;
     background: radial-gradient(farthest-corner at 50% 50%, #545454, #222, #000000);
@@ -227,41 +238,46 @@ body::-webkit-scrollbar{
     align-items: center;
 }
 
-.banner .bike-L{
+.banner .bike-L {
     height: 30vh;
     width: 25vw;
 }
-.banner .bike-L{
+
+.banner .bike-L {
     height: 30vh;
     width: 25vw;
 }
-.banner .bike-R{
+
+.banner .bike-R {
     height: 30vh;
     width: 25vw;
 }
-.banner .bike-R{
+
+.banner .bike-R {
     height: 30vh;
     width: 25vw;
 }
 
 
 
-.banner #l1{
+.banner #l1 {
     z-index: 2;
 }
-.banner #l2{
+
+.banner #l2 {
     z-index: 1;
 }
 
-.banner #r1{
+.banner #r1 {
     z-index: 1;
 }
-.banner #r2{
-    z-index:2;
+
+.banner #r2 {
+    z-index: 2;
 }
 
 
-.bnr_text{
+.bnr_text {
     position: absolute;
     display: flex;
     align-items: center;
@@ -274,27 +290,28 @@ body::-webkit-scrollbar{
     overflow: hidden;
 }
 
-.bnr_text h1{
+.bnr_text h1 {
     font-size: 6.4vw;
     font-weight: 600;
-    font-family:blenderPro;
+    font-family: blenderPro;
     flex-wrap: wrap;
     text-align: center;
     line-height: 5vw;
 
 }
-.bnr_text h3{
+
+.bnr_text h3 {
     font-size: 2.8vw;
     font-weight: 200;
-    font-family:blenderPro_light;
+    font-family: blenderPro_light;
 }
 
 
-.map{
+.map {
     height: 90vh;
     width: 100vw;
     background-color: #000000;
-    padding:8vw 8vw;
+    padding: 8vw 8vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -302,39 +319,41 @@ body::-webkit-scrollbar{
 }
 
 
-.map .text{
+.map .text {
     height: 40vh;
     width: 50vw;
     /* background-color: #000000; */
-    display: flex; 
+    display: flex;
     flex-direction: column;
 }
 
-.map .text .worldwide{
+.map .text .worldwide {
     height: 15vh;
     width: 36vw;
     overflow: hidden;
 }
 
-.map .text .worldwide h2{
-    font-size:6vw;
+.map .text .worldwide h2 {
+    font-size: 6vw;
 }
-.map .text .ktm{
+
+.map .text .ktm {
     color: #FF6600;
     height: 25vh;
     width: 25vw;
     /* background-color: #545454; */
     overflow: hidden;
 }
-.map .text .ktm h1{
+
+.map .text .ktm h1 {
     font-size: 12vw;
-    font-family:blenderPro_light;
+    font-family: blenderPro_light;
     font-weight: 500;
 }
 
 
-.map .text .dots{
-    display:flex ;
+.map .text .dots {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     height: 4vh;
@@ -345,32 +364,33 @@ body::-webkit-scrollbar{
     font-size: 1.2vw;
 }
 
-.map #orange{
+.map #orange {
     color: #FF6600;
 }
-.map #light_orange{
+
+.map #light_orange {
     color: #FFB27F;
 }
 
-.map img{
+.map img {
     height: 50vh;
-    width: 50vw;
+    width: 50%;
 }
 
 
 
-.achivements{
+.achivements {
     height: 80vh;
     width: 100vw;
     /* background-color: #898989; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:5vw 5vw;
+    padding: 5vw 5vw;
 
 }
 
-.achivements .text-box{
+.achivements .text-box {
     height: 100%;
     width: 40vw;
     background-color: #FF6600;
@@ -380,7 +400,7 @@ body::-webkit-scrollbar{
     flex-direction: column;
 }
 
-.achivements .text-box span{
+.achivements .text-box span {
     font-size: 6vw;
     line-height: 5vw;
     color: transparent;
@@ -391,17 +411,17 @@ body::-webkit-scrollbar{
 
 
 
-.achivements .box-container{
+.achivements .box-container {
     /* background-color: salmon; */
-    height:40vh ;
+    height: 40vh;
     width: 60vw;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    
+
 }
 
-.achivements .box-container .boxes{
+.achivements .box-container .boxes {
     /* background-color: #aaaaaa; */
     height: 50%;
     width: 50%;
@@ -413,7 +433,7 @@ body::-webkit-scrollbar{
 }
 
 
-.box-container .boxes .numbers{
+.box-container .boxes .numbers {
     /* background-color: #222; */
     height: 70%;
     width: 100%;
@@ -422,25 +442,27 @@ body::-webkit-scrollbar{
     justify-content: center;
     font-size: 6vw;
 }
-.box-container .boxes .name{
+
+.box-container .boxes .name {
     /* background-color: #676767; */
     height: 30%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family:blenderPro_light;
+    font-family: blenderPro_light;
 }
 
-.box-container .boxes #manufacturer-value{
+.box-container .boxes #manufacturer-value {
     color: #FF6600;
     font-size: 10vw;
 }
-.achivements .text-box span{
+
+.achivements .text-box span {
     z-index: 2;
 }
 
-.achivements .text-box h1{
+.achivements .text-box h1 {
     position: absolute;
     color: #000000;
     font-size: 10vw;
@@ -452,7 +474,7 @@ body::-webkit-scrollbar{
 
 /* e */
 
-.advertisement{
+.advertisement {
     /* background-color: #898989; */
     height: 80vh;
     width: 100vw;
@@ -461,7 +483,7 @@ body::-webkit-scrollbar{
     justify-content: space-between;
 }
 
-.advertisement .section1{
+.advertisement .section1 {
     height: 100%;
     width: 50%;
     display: flex;
@@ -469,18 +491,18 @@ body::-webkit-scrollbar{
     justify-content: space-between;
     /* background-color: #222; */
 
-    
+
 }
 
-.section1 img{
+.section1 img {
     height: 100%;
     width: 100%;
     position: relative;
     opacity: 50%;
-    
+
 }
 
-.advertisement .section1 button{
+.advertisement .section1 button {
     position: absolute;
     left: 15%;
     height: 50px;
@@ -494,17 +516,17 @@ body::-webkit-scrollbar{
 
 }
 
-.advertisement .section1 button i{
+.advertisement .section1 button i {
     font-size: 2vw;
 }
 
-.advertisement .section1 button:hover{
+.advertisement .section1 button:hover {
     background-color: #FF6600;
 }
 
 
 
-.advertisement .section2{
+.advertisement .section2 {
     height: 100%;
     width: 50%;
     display: flex;
@@ -513,7 +535,7 @@ body::-webkit-scrollbar{
     flex-direction: column;
 }
 
-.advertisement .section2 .title{
+.advertisement .section2 .title {
     height: 50%;
     width: 100%;
     /* background-color: #333; */
@@ -525,18 +547,18 @@ body::-webkit-scrollbar{
 
 }
 
-.advertisement .section2 .title h1{
+.advertisement .section2 .title h1 {
     font-size: 5vw;
     text-align: center;
-    border-bottom: 2px solid #FF6600 ;
+    border-bottom: 2px solid #FF6600;
     padding: 20px 20px;
 }
 
-.advertisement .section2 .title p{
+.advertisement .section2 .title p {
     text-align: center;
 }
 
-.advertisement .section2 .bottom button{
+.advertisement .section2 .bottom button {
     background-color: transparent;
     color: white;
     border: none;
@@ -546,12 +568,12 @@ body::-webkit-scrollbar{
     cursor: pointer;
 }
 
-.advertisement .section2 .bottom button i{
+.advertisement .section2 .bottom button i {
     font-size: 1.5vw;
     color: #FF6600;
 }
 
-.advertisement .section2 .bottom button:hover{
+.advertisement .section2 .bottom button:hover {
     scale: 1.2;
     background-color: #1a1a1a;
 }
@@ -559,14 +581,14 @@ body::-webkit-scrollbar{
 
 /* footer */
 
-.footer{
+.footer {
     height: 80vh;
     width: 100vw;
     background-color: #1c1c1c;
     padding: 2vw 3vw;
 }
 
-.footer .box1{
+.footer .box1 {
     height: 80%;
     width: 100%;
     display: flex;
@@ -575,22 +597,24 @@ body::-webkit-scrollbar{
     /* background-color: #343434; */
 }
 
-.footer .box1 .column{
+.footer .box1 .column {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     /* background-color: #1a1a1a; */
-    height:100% ;
+    height: 100%;
     padding: 2vw 0;
 }
 
-.footer .box1 .column .heading{
+.footer .box1 .column .heading {
     font-family: blenderPro;
 }
-.footer .heading:hover{
+
+.footer .heading:hover {
     color: #FF6600;
 }
-.footer .box1 .column .options{
+
+.footer .box1 .column .options {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -600,16 +624,16 @@ body::-webkit-scrollbar{
     font-size: 15px;
 }
 
-.footer a{
+.footer a {
     text-decoration: none;
     color: #8b8b8b;
 }
 
-.footer a:hover{
+.footer a:hover {
     border-bottom: 1px solid #FF6600;
 }
 
-.footer .social-media{
+.footer .social-media {
     /* background-color: #000000; */
     height: 80%;
     width: 15vw;
@@ -618,14 +642,14 @@ body::-webkit-scrollbar{
     flex-direction: column;
 }
 
-.footer .social-media .heading{
+.footer .social-media .heading {
     font-family: blenderPro;
     font-size: 3.5vw;
     color: #FF6600;
 
 }
 
-.footer .social-media .icons{
+.footer .social-media .icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -636,16 +660,17 @@ body::-webkit-scrollbar{
 }
 
 .footer .social-media .logo {
-    height:30vh ;
+    height: 30vh;
     width: 100%;
     overflow: hidden;
 }
-.footer .social-media img{
+
+.footer .social-media img {
     height: 24vh;
     width: 15vw;
 }
 
-.footer .section2{
+.footer .section2 {
     padding: 1vw 0;
     height: 20%;
     width: 100%;
@@ -654,12 +679,160 @@ body::-webkit-scrollbar{
     justify-content: space-between;
     flex-direction: column;
 }
-.footer .section2 h2{
-    font-family:blenderPro;
+
+.footer .section2 h2 {
+    font-family: blenderPro;
     color: #FF6600;
     cursor: pointer;
 }
 
-.footer .section2 h2:hover{
-    scale:1.2;
+.footer .section2 h2:hover {
+    scale: 1.2;
+}
+
+
+/*responsive */
+
+@media(max-width:600px) {
+
+    html body {
+        height: 100%;
+        width: 100%;
+        scroll-behavior: smooth;
+    }
+
+
+
+    /* navbar  */
+
+    .navbarContainer {
+        /* background-color: salmon; */
+        height: 6vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        border-bottom: 0.5px solid rgb(140, 140, 140);
+    }
+
+    .navbarContainer .logo {
+        font-size: 5vw;
+        width: 20%;
+    }
+
+    .navbarContainer .box {
+        display: none;
+    }
+
+    .navbarContainer .searchBar {
+        width: 60%;
+        margin: 0 5vw;
+        display: flex;
+        align-items: center;
+        /* background-color: #1a1a1a; */
+        padding: 0 5vw;
+        gap: 2vw;
+    }
+
+    .navbarContainer .searchBar input {
+        border: 1px solid white;
+        border-radius: 5vw;
+        height: 3vh;
+        width: 50vw;
+
+    }
+
+    .navbarContainer .searchBar i {
+        /* background-color: #333; */
+        font-size: 5vw;
+
+    }
+
+    .menu {
+        display: block;
+        color: white;
+        width: 20%;
+        height: 4vh;
+        /* background-color: #1a1a1a; */
+        /* padding: 0 6vw; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu i {
+        font-size: 5vw;
+
+    }
+
+
+    /* hero section */
+
+    .hero {
+        /* background-color: #333; */
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+    }
+
+    .hero .hero-text {
+        font-size: 20vw;
+    }
+
+    .hero-des {
+        font-size: 4vw;
+    }
+
+
+    /* footer */
+
+    .footer {
+        height: 40vh;
+        width: 100vw;
+        background-color: #1c1c1c;
+        padding: 2vw 3vw;
+    }
+
+    .footer .box1 {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: #343434; */
+    }
+    .footer .box1 .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* background-color: #1a1a1a; */
+        height: 100%;
+        padding: 2vw 0;
+    }
+
+    .footer .box1 .column .options {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* background-color: #8e8e8e; */
+        height: 100%;
+        margin-top: 2vw;
+        font-size: 2vw;
+    }
+
+    .footer .section2 p{
+        font-size: 2vw;
+    }
+
+    .footer .section2 h2{
+        font-size: 3vw;
+    }
+
+
+
+
 }

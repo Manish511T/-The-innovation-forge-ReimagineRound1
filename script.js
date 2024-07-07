@@ -130,7 +130,7 @@ function page1() {
         x: 1000,
         y: 300,
         scale: 0,
-        duration: 1,
+        duration: 2,
         opacity: 0,
         scrollTrigger: {
             trigger: ".page1",
@@ -138,7 +138,7 @@ function page1() {
             markers: false,
             start: "top 30%",
             end: "top 100%",
-            scrub: 5,
+            scrub: 3,
             pin: true
 
         }
