@@ -607,6 +607,7 @@ body::-webkit-scrollbar {
     /* background-color: #1a1a1a; */
     height: 100%;
     padding: 2vw 0;
+    overflow: hidden;
 }
 
 .footer .box1 .column .heading {
@@ -620,11 +621,12 @@ body::-webkit-scrollbar {
 .footer .box1 .column .options {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:flex-start;
     /* background-color: #8e8e8e; */
     height: 100%;
     margin-top: 2vw;
     font-size: 15px;
+    gap: 0.6vw;
 }
 
 .footer a {
