@@ -693,7 +693,7 @@ body::-webkit-scrollbar {
 
 /*responsive */
 
-@media(max-width:600px) {
+@media(max-width:750px) {
 
     html body {
         height: 100%;
